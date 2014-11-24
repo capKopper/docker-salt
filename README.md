@@ -1,1 +1,1 @@
-Docker container with salt-stack
+Docker container with salt-stack and salt-cloud
