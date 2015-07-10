@@ -14,6 +14,9 @@ RUN sudo apt-get update
 # install salt "tools"
 RUN apt-get install -y \
     salt-master=$SALT_VERSION
+# install python-etcd
+RUN apt-get install python-pip python-dev libffi-dev libssl-dev -y && \
+    pip install python-etcd
 
 # Configuration
 # runit file
