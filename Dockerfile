@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get install runit wget -y
 
 # Salt-Stack installation
-ENV SALT_VERSION 2014.7.5+ds-1ubuntu1
+ENV SALT_VERSION 2015.5.2+ds-1trusty1
 # add ppa repository
 RUN echo deb http://ppa.launchpad.net/saltstack/salt/ubuntu `lsb_release -sc` main | sudo tee /etc/apt/sources.list.d/saltstack.list && \
     wget -q -O- "http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x4759FA960E27C0A6" | sudo apt-key add -
